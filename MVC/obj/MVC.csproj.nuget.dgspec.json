@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitaoTM\\Google Drive\\SENAC\\UC04\\ATIVIDADE_2\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj": {}
+    "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitaoTM\\Google Drive\\SENAC\\UC04\\ATIVIDADE_2\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj": {
+    "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitaoTM\\Google Drive\\SENAC\\UC04\\ATIVIDADE_2\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj",
+        "projectUniqueName": "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj",
         "projectName": "MVC",
-        "projectPath": "C:\\Users\\vitaoTM\\Google Drive\\SENAC\\UC04\\ATIVIDADE_2\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj",
+        "projectPath": "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj",
         "packagesPath": "C:\\Users\\vitaoTM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitaoTM\\Google Drive\\SENAC\\UC04\\ATIVIDADE_2\\Projetinho_CRUD_SENAC\\MVC\\obj\\",
+        "outputPath": "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitaoTM\\AppData\\Roaming\\NuGet\\NuGet.Config"
