@@ -21,6 +21,7 @@ namespace MVC
 
                 ListaPacotes lista = new ListaPacotes();
                 lista.Adicionar(outroPacote);
+                lista.Mostrar();
             }
             // CreateHostBuilder(args).Build().Run();
             // string resposta;

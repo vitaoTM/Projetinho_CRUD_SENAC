@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System;
+
 
 namespace MVC.Models
 {
@@ -10,5 +12,16 @@ namespace MVC.Models
        {
             ListaPacotes.Add(pacoteNovo);
        } 
+       public Mostrar()
+       {
+            for(i = 0; i < listaPacotes.Count; i++)
+            {
+
+                Console.WriteLine("Pacotes Cadastrados");
+                Console.WriteLine($"Pacote {listaPacotes[].NomePacote}");
+                Console.WriteLine($"Valor: {listaPacotes[].Valor}");
+                Console.WriteLine($"Destino: {listaPacotes[].Destino}");
+            }
+       }
     }
 }
