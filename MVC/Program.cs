@@ -13,6 +13,15 @@ namespace MVC
     {
         public static void Main(string[] args)
         {
+            do
+            {
+                Pacotes outroPacote = new Pacotes();
+                outroPacote.Cadastrar();
+                outroPacote.ViewInfo();
+
+                ListaPacotes lista = new ListaPacotes();
+                lista.Adicionar(outroPacote);
+            }
             // CreateHostBuilder(args).Build().Run();
             // string resposta;
             // do {
