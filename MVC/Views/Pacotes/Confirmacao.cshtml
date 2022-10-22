@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Confirmação";
+}
+
+<h1>Cadastro foi realizado com sucesso!</h1>
+<p>Os seguintes dados foram cadastrados:</p>
+
+<p> Pacote: @ViewBag.NomePacote</p>
+<p> Destino: @ViewBag.Destinno </p>
+<p> Valor: @ViewBag.Valor </p>
+<p> Observação: R$ @ViewBag.Observacao </p>
+<p></p>
+
+<p>
+    <a asp-action="Cadastro">Adicionar outro pacote.</a>
+</p>
+
+<p>
+    <a asp-action="Listagem">Ver lista de pacotes.</a>
+</p>

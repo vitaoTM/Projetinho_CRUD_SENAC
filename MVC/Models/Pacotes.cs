@@ -5,10 +5,10 @@ namespace MVC.Models
 {
     public class Pacotes
     {
-        public string NomePacote { get; set; }
-        public double Valor { get; set; }
-        public string Destino { get; set;}
-        public string Observacao { get; set; }
+        public static string NomePacote { get; set; }
+        public static double Valor { get; set; }
+        public static string Destino { get; set;}
+        public static string Observacao { get; set; }
 
     }
 }
