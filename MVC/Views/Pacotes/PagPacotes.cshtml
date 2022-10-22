@@ -21,10 +21,14 @@
         @foreach (Pacotes item in Model)
         {
             <tr>
-                <td> item.NomePacote </td>
-                <td> item.Valor </td>
-                <td> item.Destino </td>
-                <td> item.Observacao </td>
+                <td> @item.NomePacote </td>
+                <td> @item.Valor </td>
+                <td> @item.Destino </td>
+                <td> @item.Observacao </td>
+                <td>
+                    <a href="/Pacotes/Editar?id=@carroAtual.id">Editar</a>
+                    <a href="/Pacotes/Remover?id=@carroAtual.id">Remover</a>
+                </td>
             </tr>
         }
     </tbody>

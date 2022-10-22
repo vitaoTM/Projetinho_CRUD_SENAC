@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Http;
 using MVC.Models;
 
 namespace MVC.Controllers
+//listagem
 {
     public class PacotesController : Controller
     {
         public IActionResult TestarConexao() {
-            ViewBag.mensagem = CarroBD.TestarConexao();
+            ViewBag.mensagem = PacotesDB.TestarConexao();
             return View();
         }
 
@@ -32,14 +33,14 @@ namespace MVC.Controllers
 
         
         [HttpPost]
-        public IActionResult Cadastro(Carro novoCarro)
+        public IActionResult Cadastro(Pacote novoPacote)
         {
-            CarroBD.Inserir(novoCarro);
+            PacotesDB.Inserir(novoPacote);
             //ViewBag.Mensagem = "Cadastro concluído com sucesso!";
-            ViewBag.marca = novoCarro.marca;
-            ViewBag.ano = novoCarro.ano;
-            ViewBag.cor = novoCarro.cor;
-            ViewBag.valor = novoCarro.valor;
+            ViewBag.NomePacote = novoPacote.NomePacote;
+            ViewBag.Destinno = novoPacote.Destinno;
+            ViewBag.valor = novoPacote.valor;
+            ViewBag.Observacao = novoPacote.Observacao;
 
 
             return View("Confirmacao");
@@ -47,25 +48,25 @@ namespace MVC.Controllers
         
         public IActionResult Listagem()
         {
-            List<Carro> listaCompleta = CarroBD.Listar();
-            //ViewBag.Total = ListaCarro.Calcular();
+            List<Pacotes> listaCompleta = PacotesDB.Listar();
+            //ViewBag.Total = ListaPacote.Calcular();
             return View(listaCompleta);
         }
 
         
         public IActionResult Editar(int id) {
-            Carro carro = CarroBD.BuscarPorId(id);
-            return View(carro);
+            Pacotes pacote = PacotesDB.BuscarPorId(id);
+            return View(pacote);
         }
 
         [HttpPost]
-        public IActionResult Editar(Carro carro) {
-            CarroBD.Atualizar(carro);
+        public IActionResult Editar(Pacotes pacote) {
+            PacotesDB.Atualizar(pacote);
             return RedirectToAction("Listagem");
         }
 
         public IActionResult Remover(int id) {
-            CarroBD.Remover(id);
+            PacotesDB.Remover(id);
             return RedirectToAction("Listagem");
         }
     }

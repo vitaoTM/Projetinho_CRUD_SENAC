@@ -1,0 +1,36 @@
+@model Pacotes
+
+@{
+    ViewData["Title"] = "Edição de Veículos";
+}
+
+<h1>Edição de Pacotes de Viagem</h1>
+<p>Preencha os dados corretamente para editar uma Viagem.</p>
+
+<form method="POST" asp-action="Editar">
+    <input type="hidden" asp-for="id">
+    <p>
+    <label>Nome:</label>
+    <input asp-for="NomePacote" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>Destino:</label>
+    <input asp-for="Destino" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>Valor:</label>
+    <input asp-for="Valor" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>Observação:</label>
+    <input asp-for="Observacao" autocomplete="off" required>
+    </p>
+
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Salvar">
+    <br>
+    <p>@ViewBag.Mensagem</p>
+</form>

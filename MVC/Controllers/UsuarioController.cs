@@ -24,7 +24,7 @@ namespace MVC.Controllers
                 HttpContext.Session.SetString("nome", usuarioEncontrado.nome);
                 HttpContext.Session.SetInt32("tipo", usuarioEncontrado.tipo);
 
-                return RedirectToAction("Cadastro", "Carro");
+                return RedirectToAction("Cadastro", "Pacote");
             } else {
                 ViewBag.Mensagem = "Falha no login!";
                 return View();
