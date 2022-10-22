@@ -1,15 +1,18 @@
 using System;
 using System.Collections.Generic;
 using MySqlConnector;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace MVC.Models
 {
-    public class PacotesDB
+    public class PacotesBD
     {
         // Dados de conexão
-        private static string dadosConexao = "Database=veiculos; Data Source=localhost; User Id=root;";
+        private static string dadosConexao = "Database=pacotes; Data Source=localhost; User Id=root;";
 
-        public static String TestarConexao() {
+        public static String TestarConexao()
+        {
             MySqlConnection conexao = new MySqlConnection(dadosConexao);
             
             conexao.Open();

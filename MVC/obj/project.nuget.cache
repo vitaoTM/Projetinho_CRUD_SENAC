@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5hD8OXE+ew6oKfgPsTfpBL3BjlxAIS/XyH88tIn1+Xcshaas/slWmbYc4OBK1mAuagIoKnRoV81axP1+tTwqNw==",
+  "dgSpecHash": "z5Nb9VA9ZySF/h+W/b9psqipLL3YZB4r/4fmpuW6GnOV/c/hIMDamgkMWwqd5EHNBcRrnJJiwXu9zq/rEEO3rA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vitaoTM\\Documents\\github\\SENAC\\Projetinho_CRUD_SENAC\\MVC\\MVC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vitaoTM\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512",
+    "C:\\Users\\vitaoTM\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
