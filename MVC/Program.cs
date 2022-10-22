@@ -13,28 +13,44 @@ namespace MVC
     {
         public static void Main(string[] args)
         {
-            do
-            {
-                Pacotes outroPacote = new Pacotes();
-                outroPacote.Cadastrar();
-                outroPacote.ViewInfo();
-
-                ListaPacotes lista = new ListaPacotes();
-                lista.Adicionar(outroPacote);
-                lista.Mostrar();
-            }
-            // CreateHostBuilder(args).Build().Run();
-            // string resposta;
-            // do {
-            //     Pacotes 
-            // }
+            CreateHostBuilder(args).Build().Run();
         }
 
-        // public static IHostBuilder CreateHostBuilder(string[] args) =>
-        //     Host.CreateDefaultBuilder(args)
-        //         .ConfigureWebHostDefaults(webBuilder =>
-        //         {
-        //             webBuilder.UseStartup<Startup>();
-        //         });
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
+// {
+//     public class Program
+//     {
+//         public static void Main(string[] args)
+//         {
+//             // do
+//             // {
+//             //     Pacotes outroPacote = new Pacotes();
+//             //     outroPacote.Cadastrar();
+//             //     outroPacote.ViewInfo();
+
+//             //     ListaPacotes lista = new ListaPacotes();
+//             //     lista.Adicionar(outroPacote);
+//             //     lista.Mostrar();
+//             // }
+//             // CreateHostBuilder(args).Build().Run();
+//             // string resposta;
+//             // do {
+//             //     Pacotes 
+//             // }
+//         }
+
+//         // public static IHostBuilder CreateHostBuilder(string[] args) =>
+//         //     Host.CreateDefaultBuilder(args)
+//         //         .ConfigureWebHostDefaults(webBuilder =>
+//         //         {
+//         //             webBuilder.UseStartup<Startup>();
+//         //         });
+//     }
+// }

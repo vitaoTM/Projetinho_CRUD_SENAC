@@ -72,3 +72,5 @@ C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netc
 C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netcoreapp3.1\MVC.pdb
 C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netcoreapp3.1\MVC.genruntimeconfig.cache
 C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netcoreapp3.1\MVC.csproj.CopyComplete
+C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cadastramento.cshtml.g.cs
+C:\Users\vitaoTM\Documents\github\SENAC\Projetinho_CRUD_SENAC\MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\PagPacotes.cshtml.g.cs

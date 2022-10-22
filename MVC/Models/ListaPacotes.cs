@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System;
+
 
 // Referente a Dados
 
@@ -7,17 +7,19 @@ namespace MVC.Models
 {
     public class ListaPacotes
     {
-       List<Pacotes> ListaPacotes = new List<Pacotes>();
+         private static List<Pacotes> listaPacotes = new List<Pacotes> ();       
+ 
+         public static void Adicionar(Pacotes pacoteNovo)
+         {
+            listaPacotes.Add(pacoteNovo);
+         }
+ 
+         public static List<Pacotes> Total()
+         {
+             return listaPacotes;
+         }
+         
+     }
+ }
 
-        public void Adicionar(Pacotes pacoteNovo)
-        {
-            ListaPacotes.Add(pacoteNovo);
-        } 
-        public static List<ClasseAgendar> Total()
-    
-        {
-            return dados;
-        }
-       
-    }
-}
+
