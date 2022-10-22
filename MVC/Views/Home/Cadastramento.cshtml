@@ -1,9 +1,8 @@
 @using MVC.Models
-@using Pacotes
+@model Pacotes
 
 @{
     ViewData["Title"] = "Cadastro";
-
 }
     <h2>
         Cadastro
@@ -19,8 +18,8 @@
             <input asp-for="Valor" />
         </p>
         <p>
-            <label asp-for="Descricao">Descrição: </label>
-            <input asp-for="Descricao" />
+            <label asp-for="Destino">Destino: </label>
+            <input asp-for="Destino" />
         </p>
         <p>
             <label asp-for="Observacao">Observação: </label>
