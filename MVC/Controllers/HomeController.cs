@@ -21,11 +21,14 @@ namespace MVC.Controllers
         {
             return View();
         }
-        
-        
-        public IActionResult PagPacotes(Pacotes campos)       
+        public IActionResult Destino()
         {
-            ListaPacotes.Adicionar(campos);
+            return View();
+        }
+        
+        public IActionResult PagPacotes(Pacotes pacoteNovo)       
+        {
+            ListaPacotes.Adicionar(pacoteNovo);
             List<Pacotes> novoPacote = ListaPacotes.Total();
             return View(novoPacote);
         }
