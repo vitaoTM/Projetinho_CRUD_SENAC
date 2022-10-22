@@ -1,0 +1,31 @@
+@using MVC.Models
+@using List<ListaPacotes>
+
+@{
+    ViewData["Title"] = "Pacotes";
+
+}
+<h2>
+    Lista de Pacotes
+</h2>
+ <table border="1">
+    <thead>
+        <tr>
+            <th> NomePacote </th>
+            <th> Valor </th>
+            <th> Destino </th>
+            <th> Observacao </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Pacotes item in Model)
+        {
+            <tr>
+                <td> item.NomePacote </td>
+                <td> item.Valor </td>
+                <td> item.Destino </td>
+                <td> item.Observacao </td>
+            </tr>
+        }
+    </tbody>
+ </table>

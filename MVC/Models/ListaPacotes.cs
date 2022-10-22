@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 
+// Referente a Dados
 
 namespace MVC.Models
 {
