@@ -57,14 +57,14 @@ namespace MVC.Models
                 if (!leitor.IsDBNull(leitor.GetOrdinal("Observacao")))
                     pacote.Observacao   = leitor.GetDouble("Observacao");
 
-                lista.Add(carro);
+                lista.Add(pacote);
             }
 
             conexao.Close();
             return lista;
         }
 
-        public static void Atualizar (Carro carro) {
+        public static void Atualizar (Pacotes pacote) {
             MySqlConnection conexao = new MySqlConnection(dadosConexao);
             conexao.Open();
             string query = "UPDATE carro SET marca=@marca, ano=@ano, cor=@cor, valor=@valor WHERE id=@id;";
